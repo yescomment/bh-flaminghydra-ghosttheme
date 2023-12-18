@@ -26,6 +26,5 @@ h3 {
 }
 
 hr {
-    margin: calc(2.4em*var(--content-spacing-multiplier, 1)), 0;
-    border-color: var(--brand-color);
+    background-color: var(--brand-color);
 }
