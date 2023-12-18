@@ -24,3 +24,8 @@ h3 {
     /* ledes */
     letter-spacing: 0.1em;
 }
+
+hr {
+    margin: calc(2.4em*var(--content-spacing-multiplier, 1)), 0;
+    border-color: var(--brand-color);
+}
