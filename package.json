@@ -1,6 +1,6 @@
 {
-    "name": "dawn",
-    "description": "A Ghost theme",
+    "name": "flaming-dawn",
+    "description": "A Ghost theme for flaminghydra.com",
     "version": "1.0.0",
     "private": true,
     "engines": {
