@@ -21,7 +21,7 @@ h4 {
 
 h3 {
     /* ledes */
-    letter-spacing: 0.05em;
+    letter-spacing: 0.1em;
 }
 
 .gh-content > h3:not(:first-child) {
