@@ -60,3 +60,18 @@
     font-weight: 700;
     src: local(""), url("../fonts/lora-v23-latin-700italic.woff2") format("woff2"), url("../fonts/lora-v23-latin-700italic.woff") format("woff");
 }
+
+@font-face {
+    font-family: 'Fern';
+    font-style: normal;
+    font-weight: 400 800;
+    src: url('fonts/FernVariable-Roman-VF.woff2') format("woff2"), url('fonts/FernVariable-Roman-VF.woff') format("woff");
+}
+
+
+@font-face {
+    font-family: 'Fern';
+    font-style: italic;
+    font-weight: 400 800;
+    src: url('fonts/FernVariable-Italic-VF.woff2') format("woff2"), url('fonts/FernVariable-Italic-VF.woff') format("woff");
+}
