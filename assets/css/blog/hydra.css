@@ -8,10 +8,19 @@ h1[id],
 h2[id],
 h3[id],
 h4[id],
-h5[id],
-h6[id] {
+h5,
+h6 {
     font-variant-caps: all-small-caps;
-    /* color: var(--brand-color); */
+}
+
+h2[id],
+h3[id],
+h4[id],
+h5[id] {
+    color: #f5e788;
+    text-align: center;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 0.1em;
 }
 
 h2[id],
@@ -20,9 +29,9 @@ h4[id] {
     font-variant-caps: small-caps;
 }
 
-h3 {
-    /* ledes */
-    letter-spacing: 0.1em;
+h3[id] {
+    font-weight: 500;
+    letter-spacing: 0.15em;
 }
 
 hr {
