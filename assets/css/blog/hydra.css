@@ -11,7 +11,7 @@ h4[id],
 h5[id],
 h6[id] {
     font-variant-caps: all-small-caps;
-    color: var(--brand-color);
+    /* color: var(--brand-color); */
 }
 
 h2[id],
