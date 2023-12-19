@@ -1,3 +1,10 @@
+/* just entirely hide some stuff for now while we focus on KS launch */
+.gh-head-actions,
+.gh-comments
+#ghost-portal-root {
+    display: none !important;
+}
+
 .gh-head-logo img  {
     max-height: 100px !important;
     padding: 0;
@@ -21,11 +28,6 @@
 
 .gh-announcement-bar {
     z-index: unset !important;
-}
-
-.gh-head-actions {
-    /* just entirely hide for now while we focus on KS launch */
-    display: none !important;
 }
 
 :is(h1, h2, h3, h4, h5, h6) +
