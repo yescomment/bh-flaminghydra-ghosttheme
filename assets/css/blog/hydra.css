@@ -1,15 +1,4 @@
-
-.cover.gh-outer {
-    /* KS launch */
-    display: none !important;
-}
-
-.site-main h2,
-.site-main .button {
-    margin: 2rem;
-}
-
-.gh-head-logo img  { 
+.gh-head-logo img  {
     max-height: 100px !important;
     padding: 0 2rem;
     z-index: 100; /* above announcement bar */
@@ -22,12 +11,6 @@
 
 .gh-announcement-bar {
     z-index: unset !important;
-}
-
-.gh-head-actions,
-.gh-head-menu {
-    /* just entirely hide for now while we focus on KS launch */
-    display: none !important;
 }
 
 :is(h1, h2, h3, h4, h5, h6) +
