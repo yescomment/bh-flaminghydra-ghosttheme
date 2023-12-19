@@ -9,6 +9,11 @@
     height: auto !important; /* allow taller logo */
 }
 
+.is-head-stacked .gh-head-menu::after,
+.is-head-stacked .gh-head-menu::before {
+    display: none !important;
+}
+
 /* put announcement-bar in stacking context with logo, so flame can lick it 🔥📣 */
 #announcement-bar-root {
     z-index: 90;
