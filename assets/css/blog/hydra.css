@@ -21,7 +21,7 @@ h5[id] {
     text-align: center;
     font-weight: 500;
     font-variant-caps: all-small-caps;
-    letter-spacing: 0.1em;
+    letter-spacing: normal !important; /* override Ghost's love of -.01em */
 }
 
 /* LEDE */
