@@ -1,11 +1,12 @@
 .gh-head-logo img  {
     max-height: 100px !important;
     padding: 0;
+    margin-top: 1rem;
     z-index: 100; /* above announcement bar */
 }
 
 .gh-head-brand {
-    height: auto; /* allow taller logo */
+    height: auto !important; /* allow taller logo */
 }
 
 /* put announcement-bar in stacking context with logo, so flame can lick it 🔥📣 */
