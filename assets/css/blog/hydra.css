@@ -1,7 +1,6 @@
 /* just entirely hide some stuff for now while we focus on KS launch */
 .gh-head-actions,
-.gh-comments,
-#ghost-portal-root {
+.gh-comments {
     display: none !important;
 }
 
