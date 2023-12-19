@@ -1,6 +1,6 @@
 .gh-head-logo img  {
     max-height: 100px !important;
-    padding: 2rem 0;
+    padding: 0;
     z-index: 100; /* above announcement bar */
 }
 
