@@ -30,6 +30,8 @@
 .author-bio {
     padding: 0.5em;
     border: 1px solid var(--brand-color);
+    border-radius: 0.25em;
+    margin: auto;
     max-width: 520px;
     margin-top: 16px;
 }
