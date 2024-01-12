@@ -17,8 +17,6 @@
             <span class="author-meta">{{location}}</span>
         {{/if}}
 
-        <div class="author-bio">{{bio}}</div>
-
         <div class="share author-social">
             {{#if facebook}}
                 <a class="share-link share-link-facebook author-social-item" href="https://www.facebook.com/{{facebook}}" target="_blank" rel="noopener noreferrer">
@@ -42,6 +40,8 @@
             {{> "loop"}}
         {{/foreach}}
     </div>
+
+    <div class="author-bio">{{bio}}</div>
 
     {{pagination}}
 
