@@ -1,6 +1,5 @@
 /* just entirely hide some stuff for now while we focus on KS launch */
-.gh-head-actions,
-.gh-comments {
+.gh-head-actions {
     display: none !important;
 }
 
