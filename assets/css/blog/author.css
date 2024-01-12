@@ -32,7 +32,7 @@
     border: 1px solid var(--brand-color);
     border-radius: 0.25em;
     margin: auto;
-    max-width: 520px;
+    max-width: min(520px, calc(100vw - 32px));
     margin-top: 16px;
 }
 
