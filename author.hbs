@@ -5,13 +5,7 @@
     {{#author}}
     <section class="author gh-canvas">
 
-        {{#if website}}
-            <h1 class="author-name">
-                <a href="{{website}}" target="_blank" rel="noopener noreferrer">{{name}}</a>
-            </h1>
-        {{else}}
-            <h1 class="author-name">{{name}}</h1>
-        {{/if}}
+        <h1 class="author-name">{{name}}</h1>
 
         {{#if location}}
             <span class="author-meta">{{location}}</span>
@@ -41,7 +35,15 @@
         {{/foreach}}
     </div>
 
-    <div class="author-bio">{{bio}}</div>
+    {{#author}}
+        {{#if website}}
+            <div class="author-bio">
+                <a href="{{website}}" target="_blank" rel="noopener noreferrer">{{bio}}</a>
+            </div>
+        {{else}}
+            <div class="author-bio">{{bio}}</div>
+        {{/if}}
+    {{/author}}
 
     {{pagination}}
 
