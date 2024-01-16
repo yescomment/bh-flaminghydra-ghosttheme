@@ -3,64 +3,62 @@
 <main class="site-main">
 
     {{#author}}
-    <section class="author gh-canvas">
+      <section class="author gh-canvas">
 
-        <h1 class="author-name">{{name}}</h1>
+          <h1 class="author-name">{{name}}</h1>
 
-        {{#if location}}
-            <span class="author-meta">{{location}}</span>
+          {{#if location}}
+              <span class="author-meta">{{location}}</span>
+          {{/if}}
+
+          <div class="share author-social">
+              {{#if facebook}}
+                  <a class="share-link share-link-facebook author-social-item" href="https://www.facebook.com/{{facebook}}" target="_blank" rel="noopener noreferrer">
+                      {{> "icons/facebook"}}
+                      Facebook
+                  </a>
+              {{/if}}
+              {{#if twitter}}
+                  <a class="share-link share-link-twitter author-social-item" href="https://twitter.com/{{twitter}}" target="_blank" rel="noopener noreferrer">
+                      {{> "icons/twitter"}}
+                      Twitter
+                  </a>
+              {{/if}}
+          </div>
+
+      </section>
+
+      {{!-- Author posts excluding those tagged 'issue' --}}
+      {{#get "posts" filter="authors:{{slug}}+tag:-issue" limit="all"}}
+        {{#if posts}}
+          <div class="post-feed gh-feed gh-canvas">
+              {{#foreach posts}}
+                  {{> "loop"}}
+              {{/foreach}}
+          </div>
         {{/if}}
+      {{/get}}
 
-        <div class="share author-social">
-            {{#if facebook}}
-                <a class="share-link share-link-facebook author-social-item" href="https://www.facebook.com/{{facebook}}" target="_blank" rel="noopener noreferrer">
-                    {{> "icons/facebook"}}
-                    Facebook
-                </a>
-            {{/if}}
-            {{#if twitter}}
-                <a class="share-link share-link-twitter author-social-item" href="https://twitter.com/{{twitter}}" target="_blank" rel="noopener noreferrer">
-                    {{> "icons/twitter"}}
-                    Twitter
-                </a>
-            {{/if}}
-        </div>
-
-    </section>
-    {{/author}}
-
-    {{!-- Author posts excluding those tagged 'issue' --}}
-    {{#get "posts" filter="author:{{author.slug}}+tag:-issue" limit="all"}}
-      {{#if posts}}
-        <div class="post-feed gh-feed gh-canvas">
-            {{#foreach posts}}
-                {{> "loop"}}
-            {{/foreach}}
-        </div>
+      {{#if website}}
+          <div class="author-bio">
+              <a href="{{website}}" target="_blank" rel="noopener noreferrer">{{bio}}</a>
+          </div>
+      {{else}}
+          <div class="author-bio">{{bio}}</div>
       {{/if}}
-    {{/get}}
 
-    {{#author}}
-        {{#if website}}
-            <div class="author-bio">
-                <a href="{{website}}" target="_blank" rel="noopener noreferrer">{{bio}}</a>
-            </div>
-        {{else}}
-            <div class="author-bio">{{bio}}</div>
+      {{!-- Appears in posts --}}
+      {{#get "posts" filter="authors:{{slug}}+tag:issue" limit="all"}}
+        {{#if posts}}
+          <div class="post-feed gh-feed gh-canvas">
+              <span class="appears-in">Appears in:</span>
+              {{#foreach posts}}
+                  {{> "loop"}}
+              {{/foreach}}
+          </div>
         {{/if}}
+      {{/get}}
     {{/author}}
-
-    {{!-- Appears in posts --}}
-    {{#get "posts" filter="author:{{author.slug}}+tag:issue" limit="all"}}
-      {{#if posts}}
-        <div class="post-feed gh-feed gh-canvas">
-            <span class="appears-in">Appears in:</span>
-            {{#foreach posts}}
-                {{> "loop"}}
-            {{/foreach}}
-        </div>
-      {{/if}}
-    {{/get}}
 
     {{!-- {{pagination}} --}}
     
