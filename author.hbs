@@ -29,11 +29,16 @@
     </section>
     {{/author}}
 
-    <div class="post-feed gh-feed gh-canvas">
-        {{#foreach posts}}
-            {{> "loop"}}
-        {{/foreach}}
-    </div>
+    {{!-- Author posts excluding those tagged 'issue' --}}
+    {{#get "posts" filter="author:{{author.slug}}+tag:-issue" limit="all"}}
+      {{#if posts}}
+        <div class="post-feed gh-feed gh-canvas">
+            {{#foreach posts}}
+                {{> "loop"}}
+            {{/foreach}}
+        </div>
+      {{/if}}
+    {{/get}}
 
     {{#author}}
         {{#if website}}
@@ -45,8 +50,21 @@
         {{/if}}
     {{/author}}
 
-    {{pagination}}
+    {{!-- Appears in posts --}}
+    {{#get "posts" filter="author:{{author.slug}}+tag:issue" limit="all"}}
+      {{#if posts}}
+        <div class="post-feed gh-feed gh-canvas">
+            <span class="appears-in">Appears in:</span>
+            {{#foreach posts}}
+                {{> "loop"}}
+            {{/foreach}}
+        </div>
+      {{/if}}
+    {{/get}}
 
+    {{!-- {{pagination}} --}}
+    
+    {{!-- Author index --}}
     {{> author-index}}
 
 </main>
