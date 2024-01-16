@@ -1,0 +1,26 @@
+{{#get "authors" limit="all"}}
+  {{#if authors}}
+    <ul class="gh-canvas author-index" {{#is "post"}}data-post-authors="{{#foreach ../post.authors}}{{slug}}{{#unless @last}},{{/unless}}{{/foreach}}{{/is}}">
+      {{#foreach authors}}
+        <li class="author-index-item{{#is "author"}}{{#match slug  ../../author.slug}} is-current{{/match}}{{/is}}" data-author="{{slug}}">
+          <a href="{{url}}">
+            {{name}}
+          </a>
+        </li>
+      {{/foreach}}
+    </ul>
+  {{/if}}
+{{/get}}
+
+{{#is "post"}}
+  <script>
+    const authorList = document.querySelector('[data-post-authors]')
+    if (authorList) {
+      const authors = authorList.getAttribute('data-post-authors').split(',')
+      authors.forEach(author => {
+        const currentAuthor = document.querySelector(`[data-author="${author}"]`)
+        if (currentAuthor) { currentAuthor.classList.add('is-current'); }
+      })
+    }
+  </script>
+{{/is}}
