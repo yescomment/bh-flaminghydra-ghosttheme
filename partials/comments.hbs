@@ -1,9 +1,20 @@
-{{#if comments}}
-    <section class="gh-comments gh-canvas">
-        <header class="gh-comments-header">
-            <h3 class="gh-comments-title related-title">Member discussion</h3>
-            {{comment_count class="gh-comments-count"}}
-        </header>
-        {{comments title="" count=false}}
-    </section>
+<h2><span id="cove-count"></span> Comments</h2>
+
+{{^if @member}}
+	<p>Only {{@site.title}} members can comment. <a href="#/portal/signup">Sign in or become one</a> to join the conversation.<br>
 {{/if}}
+
+<div id="cove"></div>
+
+{{#if @member}}
+	<p>Signed in as {{@member.email}} · <a href="javascript:" data-members-signout>Sign out</a></p>
+{{/if}}
+
+<script>
+	const Cove = {
+		contentId: "{{id}}",
+		memberId: "{{@member.uuid}}",
+		memberEmail: "{{@member.email}}",
+		memberName: "{{@member.name}}"
+	}
+</script>
