@@ -1,6 +1,6 @@
 {{#get "authors" limit="all"}}
   {{#if authors}}
-    <ul class="gh-canvas author-index" {{#is "post"}}data-post-authors="{{#foreach ../post.authors}}{{slug}}{{#unless @last}},{{/unless}}{{/foreach}}{{/is}}">
+    <ul class="gh-canvas author-index" {{#is "post"}}data-post-authors="{{#foreach ../post.authors}}{{slug}}{{#unless @last}},{{/unless}}{{/foreach}}"{{/is}}>
       {{#foreach authors}}
         <li class="author-index-item author-name{{#is "author"}}{{#match slug  ../../author.slug}} is-current{{/match}}{{/is}}" data-author="{{slug}}">
           <a href="{{url}}">
