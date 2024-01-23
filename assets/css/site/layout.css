@@ -9,6 +9,11 @@
     padding: 6rem 0;
 }
 
+.tryptich {
+    display: grid;
+    grid-area: minmax(100px, 250px) auto minmax(100px, 250px);
+}
+
 .page-template .site-content {
     padding-block: 0;
 }

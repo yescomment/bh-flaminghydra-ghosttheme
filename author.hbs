@@ -1,5 +1,12 @@
 {{!< default}}
 
+<div class="tryptich">
+
+<aside>
+  <h2>Index of Flaming Hydra Issues</h2>
+  {{ > issue-index }}
+</aside>
+
 <main class="site-main">
 
     {{#author}}
@@ -64,7 +71,11 @@
 
     {{!-- {{pagination}} --}}
 
-    {{!-- Author index --}}
-    {{> author-index}}
-
 </main>
+
+<aside>
+  <h2>Index of Flaming Hydra Authors</h2>
+  {{> author-index}}
+</aside>
+
+</div>
