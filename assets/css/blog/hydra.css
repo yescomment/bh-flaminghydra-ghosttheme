@@ -107,6 +107,11 @@ hr {
 
 .fh-box .author-index {
     padding: 0;
+    display: block;
+    list-style: none;
+}
+
+.fx-box .author-index .author-index-item {
     display: inline-block;
 }
 
