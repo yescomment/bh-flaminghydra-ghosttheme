@@ -104,3 +104,17 @@ hr {
 .fh-box h2 {
     font-family: var(--font-serif);
 }
+
+.fh-box .author-index {
+
+}
+
+.fh-box .author-index .author-index-item {
+    display: inline-block;
+}
+
+.fh-box .author-index a:hover,
+.fh-box .author-index a.is-current {
+    padding: 0.25em;
+    background-color: var(--brand-color);
+}
