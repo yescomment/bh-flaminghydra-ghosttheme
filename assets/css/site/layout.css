@@ -12,7 +12,8 @@
 .tryptich {
     display: grid;
     grid-template-columns: minmax(100px, 250px) auto minmax(100px, 250px);
-    max-width: var(--container-width,1200px);
+    max-width: var(--container-width, 1200px);
+    margin: 0 auto;
 }
 
 .page-template .site-content {
