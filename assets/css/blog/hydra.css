@@ -78,7 +78,7 @@ hr {
 }
 
 .fancy {
-    font: var(--font-serif);
+    font-family: var(--font-serif);
     font-variant-caps: all-small-caps;
 }
 
@@ -106,15 +106,17 @@ hr {
 }
 
 .fh-box .author-index {
-
+    padding: 0;
+    display: inline-block;
 }
 
-.fh-box .author-index .author-index-item {
+.fh-box .author-index a {
+    padding: 0.15em;
+    border-radius: 0.3em;
     display: inline-block;
 }
 
 .fh-box .author-index a:hover,
-.fh-box .author-index a.is-current {
-    padding: 0.25em;
+.fh-box .author-index .is-current a {
     background-color: var(--brand-color);
 }
