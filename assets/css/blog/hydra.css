@@ -82,8 +82,9 @@ hr {
 }
 
 .fancy small {
-    font-variant-caps: unset;
+    font-variant-caps: normal;
     font-weight: lighter;
+    font-style: italic;
 }
 
 .fh-box {
@@ -95,6 +96,8 @@ hr {
     color: var(--color-white);
     border-radius: 1.5rem;
     padding: 0.75rem;
+
+    text-align: center;
 }
 
 .fh-box h2 {
