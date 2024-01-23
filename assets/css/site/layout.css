@@ -9,11 +9,23 @@
     padding: 6rem 0;
 }
 
-.tryptich {
+.polyptich {
     display: grid;
-    grid-template-columns: minmax(100px, 250px) auto minmax(100px, 250px);
     max-width: var(--container-width, 1200px);
     margin: 0 auto;
+}
+
+.aside-on-both {
+    /* formerly .tryptich */
+    grid-template-columns: minmax(100px, 250px) auto minmax(100px, 250px);
+}
+
+.aside-on-right {
+    grid-template-columns: auto minmax(100px, 250px);
+}
+
+.aside-on-left {
+    grid-template-columns: minmax(100px, 250px) auto;
 }
 
 .page-template .site-content {
