@@ -118,7 +118,6 @@ hr {
 .fh-box .author-index a {
     padding: 0.15em;
     border-radius: 0.3em;
-    display: inline-block;
 }
 
 .fh-box .author-index a:hover,
