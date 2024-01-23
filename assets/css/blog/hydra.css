@@ -77,6 +77,10 @@ hr {
     background-color: var(--brand-color);
 }
 
+small {
+    font-variant-caps: all-small-caps;
+}
+
 .fh-box {
     background-color: var(--fh-yellow);
     color: var(--color-white);
