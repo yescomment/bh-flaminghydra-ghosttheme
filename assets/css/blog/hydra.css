@@ -78,6 +78,7 @@ hr {
 }
 
 .fancy {
+    font: var(--font-serif);
     font-variant-caps: all-small-caps;
 }
 
