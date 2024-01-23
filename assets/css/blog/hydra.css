@@ -88,6 +88,10 @@ hr {
 
 .fh-box {
     background-color: var(--fh-yellow);
+    --primary-text-color: var(--white-color);
+    --darker-gray-color: #222;
+    --lighter-gray-color: #444;
+
     color: var(--color-white);
     border-radius: 1.5rem;
     padding: 0.75rem;
