@@ -1,0 +1,9 @@
+{{#get "posts" filter="tag:issue" limit="all"}}
+  {{#if posts}}
+    <ul class="fh-issue-index">
+      {{#foreach posts}}
+          {{> "loop"}}
+      {{/foreach}}
+    </ul>
+  {{/if}}
+{{/get}}
