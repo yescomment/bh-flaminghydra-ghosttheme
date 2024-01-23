@@ -79,7 +79,11 @@ hr {
 
 .fh-box {
     background-color: var(--fh-yellow);
-    color: var(--primary-text-color);
+    color: var(--color-white);
     border-radius: 1.5rem;
     padding: 0.75rem;
+}
+
+.fh-box h2 {
+    font-family: var(--font-serif);
 }
