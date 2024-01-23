@@ -15,8 +15,9 @@
 }
 
 .author-name {
+    color: var(--fh-yellow);
+    font-family: var(--font-serif);
     margin-bottom: 0;
-    font-size: 2.4rem;
 }
 
 .author-meta {
