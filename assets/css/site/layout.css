@@ -21,11 +21,11 @@
 }
 
 .aside-on-right {
-    grid-template-columns: auto minmax(100px, 350px);
+    grid-template-columns: auto minmax(100px, 250px);
 }
 
 .aside-on-left {
-    grid-template-columns: minmax(100px, 350px) auto;
+    grid-template-columns: minmax(100px, 250px) auto;
 }
 
 .page-template .site-content {
