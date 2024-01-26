@@ -32,7 +32,7 @@
       </section>
 
       {{!-- Author posts excluding those tagged 'issue' --}}
-      {{#get "posts" filter="authors:{{slug}}+tag:-issue" limit="all"}}
+      {{#get "posts" filter="authors:{{slug}}+tags:-issue" limit="all"}}
         {{#if posts}}
           <div class="post-feed gh-feed gh-canvas">
               {{#foreach posts}}
