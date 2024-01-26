@@ -100,8 +100,8 @@ hr {
     --lighter-gray-color: #444;
 
     color: var(--color-white);
-    border-radius: 1.5rem;
-    padding: 0.75rem;
+    border-radius: 2rem;
+    padding: 1.5rem;
 
     text-align: center;
     font-weight: 500;
@@ -119,12 +119,13 @@ hr {
 
 .fh-box .author-index .author-index-item {
     display: block;
+    margin: 0 0.25rem;
     text-align: left;
 }
 
 .fh-box .author-index a {
     padding: 0.3em;
-    border-radius: 0.6em;
+    border-radius: 0.5em;
     opacity: 1;
 }
 
