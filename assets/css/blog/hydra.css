@@ -77,6 +77,11 @@ hr {
     background-color: var(--brand-color);
 }
 
+.author {
+    display: grid;
+    text-align: left;
+}
+
 .fancy {
     font-family: var(--font-serif);
     font-variant-caps: all-small-caps;
