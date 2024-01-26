@@ -28,13 +28,22 @@
     text-transform: uppercase;
 }
 
+.author-announcement {
+    margin-top: 4.5rem;
+}
+
+.author-announcement .author-meta {
+    color: var(--brand-accent);
+}
+
 .author-bio {
-    padding: 0.5em;
-    border: 1px solid var(--brand-color);
-    border-radius: 0.25em;
-    margin: auto;
-    max-width: min(520px, calc(100vw - 32px));
+    /* announcement content/link */
+    font-family: var(--font-serif);
     margin-top: 16px;
+}
+
+.author-bio a {
+    text-decoration-color: var(--brand-accent);
 }
 
 .author-social {
