@@ -33,7 +33,7 @@
 }
 
 .author-announcement .author-meta {
-    color: var(--brand-accent);
+    color: var(--brand-color);
 }
 
 .author-bio {
@@ -43,7 +43,7 @@
 }
 
 .author-bio a {
-    text-decoration-color: var(--brand-accent);
+    color: var(--brand-color);
 }
 
 .author-social {
