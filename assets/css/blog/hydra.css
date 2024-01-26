@@ -104,6 +104,7 @@ hr {
     padding: 0.75rem;
 
     text-align: center;
+    font-weight: 500;
 }
 
 .fh-box h2 {
@@ -117,15 +118,18 @@ hr {
 }
 
 .fh-box .author-index .author-index-item {
-    display: inline-block;
+    display: block;
+    text-align: left;
 }
 
 .fh-box .author-index a {
     padding: 0.3em;
     border-radius: 0.6em;
+    opacity: 1;
 }
 
 .fh-box .author-index a:hover,
 .fh-box .author-index .is-current a {
     background-color: var(--brand-color);
+    color: white;
 }
