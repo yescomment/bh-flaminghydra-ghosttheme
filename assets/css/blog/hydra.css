@@ -96,13 +96,13 @@ hr {
 .author-name {
     color: var(--fh-yellow); /* note: inverted in fh-box */
     font-family: var(--font-serif);
-    margin-bottom: 0;
+}
 
+a.author-name {
+    font-weight: 600;
     padding: 0.3em;
     border-radius: 0.5em;
     opacity: 1;
-
-    font-weight: 600;
 }
 
 .fh-box a.author-name {
