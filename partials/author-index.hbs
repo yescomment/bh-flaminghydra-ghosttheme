@@ -1,4 +1,4 @@
-{{#get "authors" limit="all"}}
+{{#get "authors" limit="all" filter="slug:-echidna"}}
   {{#if authors}}
     <ul class="gh-canvas author-index" {{#is "post"}}data-post-authors="{{#foreach ../post.authors}}{{slug}}{{#unless @last}},{{/unless}}{{/foreach}}"{{/is}}>
       {{#foreach authors}}
