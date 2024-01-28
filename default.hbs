@@ -73,6 +73,15 @@
         {{/if}}
     {{/is}}
 
+    {{!-- dev homepage --}}
+    {{#has slug="homepage"}}
+        {{> "cover"}}
+
+        {{#if @custom.show_featured_posts}}
+            {{> "featured-posts"}}
+        {{/if}}
+    {{/has}}
+
     <div class="site-content">
         {{{body}}}
     </div>
