@@ -93,7 +93,7 @@ hr {
     font-style: italic;
 }
 
-a.author-name {
+.author-name {
     color: var(--fh-yellow); /* note: inverted in fh-box */
     font-family: var(--font-serif);
     margin-bottom: 0;
@@ -117,11 +117,10 @@ a.author-name:hover,
 
 .fh-box {
     background-color: var(--fh-yellow);
-    --primary-text-color: var(--white-color);
+    --primary-text-color: var(--color-white);
     --darker-gray-color: #222;
     --lighter-gray-color: #444;
 
-    color: var(--color-white);
     border-radius: 2rem;
     padding: 1.5rem;
 
