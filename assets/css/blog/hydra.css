@@ -125,6 +125,8 @@ a.author-name:hover,
     --darker-gray-color: #222;
     --lighter-gray-color: #444;
 
+    color: var(--primary-text-color);
+
     border-radius: 2rem;
     padding: 1.5rem;
 
