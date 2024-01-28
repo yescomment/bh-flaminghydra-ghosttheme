@@ -9,11 +9,14 @@
                         {{date published_at}}
                     </time>
                 </span>
-                {{#if reading_time}}
-                    <span class="single-meta-item single-meta-length">
-                        {{reading_time}}
+                {{#has tag="issues"}}
+                    <span class="single-meta-item single-meta-tag">
+                        Another timely
+                        <a class="post-tag post-tag-{{slug}}" href="{{url}}">
+                            Issue of Flaming Hydra
+                        </a>
                     </span>
-                {{/if}}
+                {{#else}}
                 {{#primary_tag}}
                     <span class="single-meta-item single-meta-tag">
                         <a class="post-tag post-tag-{{slug}}" href="{{url}}">
@@ -21,6 +24,7 @@
                         </a>
                     </span>
                 {{/primary_tag}}
+                {{/has}}
             </div>
             {{/is}}
 
