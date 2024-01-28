@@ -28,7 +28,7 @@
     z-index: unset !important;
 }
 
-h1, h2, h3, h4 {
+.single-title {
     color: var(--fh-yellow);
 }
 
