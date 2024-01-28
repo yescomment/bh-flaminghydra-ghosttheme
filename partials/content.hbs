@@ -75,14 +75,10 @@
         <div class="single-footer-middle">
         {{#if @custom.show_author}}
             <div class="single-footer-top">
-                <h3 class="single-footer-title">Published by:</h3>
+                <h3 class="single-footer-title fancy">This was a piece <small>by</small>:</h3>
                 <div class="author-list">
                     {{#foreach authors}}
-                    <div class="author-image-placeholder u-placeholder square">
-                        <a href="{{url}}" title="{{name}}">
-                            <img class="author-image u-object-fit" src="{{img_url profile_image size="xs"}}" alt="{{name}}" loading="lazy">
-                        </a>
-                    </div>
+                    <a class="author-name" href="{{url}}">{{name}}</a>
                     {{/foreach}}
                 </div>
             </div>
