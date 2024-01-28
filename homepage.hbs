@@ -9,19 +9,19 @@
 
 <main class="site-main">
 
-<div class="post-feed gh-feed gh-canvas">
-  {{> "cover"}}
+  <div class="post-feed gh-feed gh-canvas">
+    {{> "cover"}}
 
-  {{#if @custom.show_featured_posts}}
-    {{> "featured-posts"}}
-  {{/if}}
+    {{#if @custom.show_featured_posts}}
+      {{> "featured-posts"}}
+    {{/if}}
 
-  {{#foreach posts}}
-    {{> "loop"}}
-  {{/foreach}}
-</div>
+    {{#foreach posts}}
+      {{> "loop"}}
+    {{/foreach}}
+  </div>
 
-{{pagination}}
+  {{pagination}}
 
 </main>
 
