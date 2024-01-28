@@ -101,6 +101,12 @@ a.author-name {
     padding: 0.3em;
     border-radius: 0.5em;
     opacity: 1;
+
+    font-weight: 600;
+}
+
+.fh-box a.author-name {
+    color: var(--darker-gray-color);
 }
 
 a.author-name:hover,
@@ -137,8 +143,4 @@ a.author-name:hover,
     display: block;
     margin: 0 0.4rem;
     text-align: left;
-}
-
-.fh-box .author-index a {
-    color: var(--darker-gray-color);
 }
