@@ -15,8 +15,6 @@
 }
 
 .author-name {
-    color: var(--fh-yellow);
-    font-family: var(--font-serif);
     margin-bottom: 0;
 }
 
@@ -49,6 +47,12 @@
 
 .author-list {
     display: flex;
+    flex-direction: column;
+}
+
+.author-list .author-name {
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .author-list .author-image-placeholder {

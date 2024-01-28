@@ -93,6 +93,23 @@ hr {
     font-style: italic;
 }
 
+a.author-name {
+    color: var(--fh-yellow); /* note: inverted in fh-box */
+    font-family: var(--font-serif);
+    font-weight: 500;
+    margin-bottom: 0;
+
+    padding: 0.3em;
+    border-radius: 0.5em;
+    opacity: 1;
+}
+
+a.author-name:hover,
+.author-index .is-current a {
+    background-color: var(--brand-color);
+    color: white;
+}
+
 .fh-box {
     background-color: var(--fh-yellow);
     --primary-text-color: var(--white-color);
@@ -119,18 +136,10 @@ hr {
 
 .fh-box .author-index .author-index-item {
     display: block;
-    margin: 0 0.25rem;
+    margin: 0 0.4rem;
     text-align: left;
 }
 
 .fh-box .author-index a {
-    padding: 0.3em;
-    border-radius: 0.5em;
-    opacity: 1;
-}
-
-.fh-box .author-index a:hover,
-.fh-box .author-index .is-current a {
-    background-color: var(--brand-color);
-    color: white;
+    color: var(--darker-gray-color);
 }

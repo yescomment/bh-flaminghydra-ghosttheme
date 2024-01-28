@@ -104,6 +104,7 @@
 .single-footer-title {
     margin-bottom: 1rem;
     font-size: 1.8rem;
+    color: var(--fh-yellow);
 }
 
 .single-footer-bottom {
