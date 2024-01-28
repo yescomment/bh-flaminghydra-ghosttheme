@@ -62,17 +62,6 @@
     transition: margin 0.2s var(--animation-base);
 }
 
-.icon-star {
-    width: 16px;
-    height: 16px;
-    margin-right: 1rem;
-    color: var(--orange-color);
-}
-
-.public .icon-star {
-    display: none;
-}
-
 .feed-length {
     font-size: 1.4rem;
     color: var(--secondary-text-color);
