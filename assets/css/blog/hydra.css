@@ -119,6 +119,14 @@ a.author-name:hover,
     color: white;
 }
 
+.homepage h1 {
+    color: var(--brand-color);
+}
+
+.homepage :is(h2, h3, h4) {
+    color: var(--fh-yellow);
+}
+
 .fh-box {
     background-color: var(--fh-yellow);
     --primary-text-color: var(--color-white);
