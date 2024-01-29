@@ -128,6 +128,10 @@ h1.toplevel {
     margin-top: 2rem;
 }
 
+a.block {
+    display: block !important;
+}
+
 .fh-box {
     background-color: var(--fh-yellow);
     --primary-text-color: var(--color-white);
