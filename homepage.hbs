@@ -1,28 +1,19 @@
 {{!< default}}
 
-<div class="polyptich aside-on-both">
-
-<aside class="fh-box">
-  <h2 class="fancy"><small>Past</small> Issues</h2>
-  {{> issue-index }}
-</aside>
+<div class="polyptich aside-on-right">
 
 <main class="site-main">
 
   <div class="post-feed gh-feed gh-canvas">
 
-    {{> "cover"}}
+    <h1 class="fancy">On Fire <small>and</small> Hard to Kill</h1>
 
-    {{> "featured-posts"}}
+    <h2 class="fancy"><small>Current</small> Issue</h2>
+    {{> recent-nonissues}}
 
-    {{!--
-    {{#foreach posts}}
-      {{> "loop"}}
-    {{/foreach}}
-     --}}
+    <h2 class="fancy"><small>Past</small> Issues</h2>
+    {{> issue-index}}
   </div>
-
-  {{pagination}}
 
 </main>
 

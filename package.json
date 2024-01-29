@@ -75,11 +75,6 @@
             "white_logo_for_dark_mode": {
                 "type": "image"
             },
-            "featured_title": {
-                "type": "text",
-                "default": "Featured articles",
-                "group": "homepage"
-            },
             "show_author": {
                 "type": "boolean",
                 "default": true,
