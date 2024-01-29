@@ -119,12 +119,13 @@ a.author-name:hover,
     color: white;
 }
 
-.homepage h1 {
+.homepage h1.fancy {
     color: var(--brand-color);
 }
 
-.homepage :is(h2, h3, h4) {
+.homepage :is(h2.fancy, h3.fancy, h4.fancy) {
     color: var(--fh-yellow);
+    margin-top: 2rem;
 }
 
 .fh-box {
