@@ -158,3 +158,9 @@ h1.toplevel {
     margin: 0 0.4rem;
     text-align: left;
 }
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
