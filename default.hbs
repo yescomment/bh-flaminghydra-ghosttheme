@@ -65,6 +65,10 @@
         </div>
     </header>
 
+    {{#is "home"}}
+        {{> "homepage"}}
+    {{/is}}
+
     <div class="site-content">
         {{{body}}}
     </div>
