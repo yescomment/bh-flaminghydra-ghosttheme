@@ -1,4 +1,4 @@
-{{#get "posts" filter="tag:-issues" limit="4" as |featured|}}
+{{#get "posts" filter="tag:-issues+tag:-#empty" limit="4" as |featured|}}
 {{#if featured}}
     <div class="gh-outer">
     <section class="featured-wrapper gh-inner">
