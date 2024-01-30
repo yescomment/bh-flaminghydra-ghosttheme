@@ -149,6 +149,10 @@ a.block {
 
     border-radius: 2rem;
     padding: 1.5rem;
+    padding-bottom: 0; /* nicer scroll */
+
+    display: flex;
+    flex-direction: column;
 
     text-align: center;
     font-weight: 400;
@@ -159,8 +163,9 @@ a.block {
 }
 
 .fh-box .author-index {
-    padding: 0;
     display: block;
+    margin: 0;
+    padding: 1.5rem 0;
     list-style: none;
 }
 
