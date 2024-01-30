@@ -10,8 +10,10 @@
         {{> "related-posts"}}
     {{/if}}
 
-    {{#post}}
-        {{> "comments"}}
-    {{/post}}
+    {{#has tag="issues"}}
+        {{#post}}
+            {{> "comments"}}
+        {{/post}}
+    {{/has}}
 
 </main>
