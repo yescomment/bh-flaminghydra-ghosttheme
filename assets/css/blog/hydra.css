@@ -169,6 +169,7 @@ a.block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+    margin-top: 1em; /* match index (ul default) */
 }
 
 .fh-issue-index {
