@@ -4,18 +4,18 @@
 
         {{#foreach featured}}
             <article class="{{post_class}}">
-                <a class="u-placeholder horizontal block" href={{url}} aria-label="{{title}}">
+                <a class="horizontal block" href={{url}} aria-label="{{title}}">
                     {{#if feature_image}}
                         <img
-                            class="u-object-fit"
+                            class="article-cover"
                             srcset="{{> srcset}}"
                             sizes="(min-width: 992px) calc((92vw - 60px) / 3), (min-width: 768px) calc((92vw - 30px) / 2), 92vw"
                             src="{{img_url feature_image size="m"}}"
                             alt="{{title}}"
                         >
                     {{/if}}
+                    <h3 class="post-title">{{title}}</h3>
                 </a>
-                <h3 class="post-title"><a href={{url}}>{{title}}</a></h3>
             </article>
         {{/foreach}}
 

@@ -197,3 +197,8 @@ a.block {
 .fh-issue-index .feed-title {
     white-space: unset;
 }
+
+.article-cover {
+    aspect-ratio: 2/1;
+    object-fit: cover;
+}
