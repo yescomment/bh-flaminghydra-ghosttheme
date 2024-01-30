@@ -169,11 +169,11 @@ a.block {
     list-style: none;
 }
 
-.fh-box .scroll {
+.fh-box.scroll {
     max-height: min(60rem, 150vw); /* idk */
 }
 
-.fh-box .scroll .author-index {
+.fh-box.scroll .author-index {
     overflow-y: auto;
 }
 
