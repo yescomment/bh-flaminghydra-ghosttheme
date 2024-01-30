@@ -11,11 +11,11 @@
             {{> "related-posts"}}
         {{/if}}
 
-        {{#has tag="issue"}}
-            {{#post}}
+        {{#post}}
+            {{#has tag="issue"}}
                 {{> "comments"}}
-            {{/post}}
-        {{/has}}
+            {{/has}}
+        {{/post}}
     {{/is}}
 
 </main>
