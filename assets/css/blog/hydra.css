@@ -1,6 +1,10 @@
-/* just entirely hide some stuff for now while we focus on KS launch */
-.gh-head-actions {
+.gh-burger {
+    /* nothing in primary nav */
     display: none !important;
+}
+
+.gh-head-brand-wrapper {
+    padding: 1rem;
 }
 
 .gh-head-logo img  {
