@@ -172,5 +172,5 @@ a.block {
 }
 
 .fh-issue-index {
-    margin-block-start: 0;
+    padding-inline-start: 0;
 }
