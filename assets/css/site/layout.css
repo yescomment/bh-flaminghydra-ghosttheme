@@ -16,16 +16,16 @@
     margin: 0 auto;
 }
 
-.aside-on-both {
+.polyptich > .aside-on-both {
     /* formerly .tryptich */
     grid-template-columns: minmax(100px, 250px) auto minmax(100px, 250px);
 }
 
-.aside-on-right {
+.polyptich > .aside-on-right {
     grid-template-columns: auto minmax(100px, 250px);
 }
 
-.aside-on-left {
+.polyptich > .aside-on-left {
     grid-template-columns: minmax(100px, 250px) auto;
 }
 
@@ -38,7 +38,9 @@
         padding: 3rem 0;
     }
 
-    .polyptich > * {
-        grid-template-columns: 1fr;
+    .polyptich > .aside-on-both,
+    .polyptich > .aside-on-left,
+    .polyptich > .aside-on-right {
+        grid-template-columns: auto;
     }
 }
