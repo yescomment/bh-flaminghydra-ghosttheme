@@ -169,6 +169,14 @@ a.block {
     list-style: none;
 }
 
+.fh-box .scroll {
+    max-height: min(60rem, 150vw); /* idk */
+}
+
+.fh-box .scroll .author-index {
+    overflow-y: auto;
+}
+
 .fh-box .author-index .author-index-item {
     display: block;
     margin: 0 0.4rem;
