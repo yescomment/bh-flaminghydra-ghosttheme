@@ -175,3 +175,7 @@ a.block {
 .fh-issue-index {
     padding-inline-start: 0;
 }
+
+.fh-issue-index .feed-title {
+    white-space: unset;
+}
