@@ -1,9 +1,5 @@
-.featured-wrapper {
-    margin-top: 60px;
-}
-
 .featured-wrapper .u-placeholder {
-    margin-bottom: 24px;
+    margin-bottom: 1rem;
 }
 
 .featured-wrapper .post-title {

@@ -1,9 +1,7 @@
 {{#get "posts" filter="tags:-[issues,empty]" limit="4" as |featured|}}
 {{#if featured}}
-    <div class="gh-outer">
-    <section class="featured-wrapper gh-inner">
+    <section class="featured-wrapper featured-grid">
 
-        <div class="featured-grid">
         {{#foreach featured}}
             <article class="{{post_class}}">
                 <a class="u-placeholder horizontal block" href={{url}} aria-label="{{title}}">
@@ -20,9 +18,7 @@
                 <h3 class="post-title">{{title}}</h3>
             </article>
         {{/foreach}}
-        </div>
 
     </section>
-    </div>
 {{/if}}
 {{/get}}

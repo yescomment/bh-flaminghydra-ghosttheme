@@ -126,6 +126,8 @@ h1.toplevel {
 :is(h2, h3, h4).toplevel {
     color: var(--fh-yellow);
     margin-top: 2rem;
+    text-align: left;
+    margin-left: 0;
 }
 
 a.block {
@@ -167,4 +169,8 @@ a.block {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
+}
+
+.fh-issue-index {
+    margin-block-start: 0;
 }
