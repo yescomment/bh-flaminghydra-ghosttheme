@@ -32,7 +32,8 @@
     <footer class="single-footer">
 
         <div class="single-footer-middle">
-        {{#if @custom.show_authors_on_issues}}
+        {{!-- Contribution box only for pieces --}}
+        {{#has tag="-issues"}}
             <div class="single-footer-top">
                 <h3 class="single-footer-title fancy">A contribution <small>by</small></h3>
                 <div class="author-list">
@@ -41,7 +42,7 @@
                     {{/foreach}}
                 </div>
             </div>
-        {{/if}}
+        {{/has}}
         </div>
 
     </footer>

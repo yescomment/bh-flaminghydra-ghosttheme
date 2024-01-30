@@ -75,11 +75,6 @@
             "white_logo_for_dark_mode": {
                 "type": "image"
             },
-            "show_authors_on_issues": {
-                "type": "boolean",
-                "default": false,
-                "group": "post"
-            },
             "show_related_posts": {
                 "type": "boolean",
                 "default": true,
