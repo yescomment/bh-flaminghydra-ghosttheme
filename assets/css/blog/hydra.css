@@ -121,6 +121,7 @@ a.author-name:hover,
 
 h1.toplevel {
     color: var(--brand-color);
+    margin-top: 2rem;
 }
 
 :is(h2, h3, h4).toplevel {
