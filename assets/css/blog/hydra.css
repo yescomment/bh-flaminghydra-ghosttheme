@@ -204,3 +204,7 @@ a.block {
     object-fit: cover;
     margin-bottom: 1rem;
 }
+
+.feed-length {
+    text-transform: uppercase;
+}
