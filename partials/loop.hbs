@@ -10,6 +10,11 @@
     </div>
 
     <h2 class="feed-title">{{title}}</h2>
+    {{#has tag="issue"}}
+    <div class="feed-length">
+        {{slug}}
+    </div>
+    {{/has}}
 
     {{> "icons/chevron-right"}}
 
