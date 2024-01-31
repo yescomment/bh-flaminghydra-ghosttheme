@@ -200,6 +200,7 @@ a.block {
 
 .article-cover {
     aspect-ratio: 2/1;
+    width: 100%; /* required for Firefox */
     object-fit: cover;
     margin-bottom: 1rem;
 }
