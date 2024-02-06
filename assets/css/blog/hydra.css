@@ -85,7 +85,7 @@ h4[id].fiction::before {
     content: 'fiction by ';
 }
 
-h4[id]:not(:has(em))::before {
+h4[id]:has(em)::before {
     content: none;
 }
 
