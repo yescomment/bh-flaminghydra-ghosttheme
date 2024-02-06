@@ -73,7 +73,7 @@ h4[id] {
     font-variant-caps: small-caps;
 }
 
-h4[id]::before {
+h4[id] a[href*=/contributor/]::before {
     /* titles & authors get some capital letters */
     content: 'by ';
     font-style: italic;
@@ -81,7 +81,7 @@ h4[id]::before {
     font-variant-caps: normal;
 }
 
-h4[id][href$=#fiction]::before {
+h4[id] a[href$=#fiction]::before {
     /* horrid hack */
     content: 'fiction by ';
 }
