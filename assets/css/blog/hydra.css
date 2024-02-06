@@ -81,6 +81,11 @@ h4[id]::before {
     font-variant-caps: normal;
 }
 
+h4[id][href$=#fiction]::before {
+    /* horrid hack */
+    content: 'fiction by ';
+}
+
 hr {
     background-color: var(--brand-color);
 }
