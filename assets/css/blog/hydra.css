@@ -73,22 +73,6 @@ h4[id] {
     font-variant-caps: small-caps;
 }
 
-h4[id]::before {
-    /* titles & authors get some capital letters */
-    content: 'by ';
-    font-style: italic;
-    font-weight: 300;
-    font-variant-caps: normal;
-}
-
-h4[id].fiction::before {
-    content: 'fiction by ';
-}
-
-h4[id]:has(em)::before {
-    content: none;
-}
-
 h2[id] em,
 h3[id] em,
 h4[id] em {
