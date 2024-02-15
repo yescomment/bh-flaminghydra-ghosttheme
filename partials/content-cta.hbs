@@ -2,19 +2,21 @@
 
 <section class="single-cta">
     {{#has visibility="paid"}}
-        <h2 class="single-cta-title">This post is for paying subscribers only</h2>
+        <h2 class="single-cta-title">It’s a paywall, but a small one</h2>
+        <p class="single-cta-title">Read this post and get our weekdaily newsletter for $3 a month</p>
     {{/has}}
     {{#has visibility="members"}}
-        <h2 class="single-cta-title">This post is for subscribers only</h2>
+        <h2 class="single-cta-title">Sign up and read this post for free</h2>
+        <p class="single-cta-title">Free members will receive occasional updates from our cooperative</p>
     {{/has}}
     {{#has visibility="filter"}}
-        <h2 class="single-cta-title">This post is for subscribers on the {{tiers}} only</h2>
+        <h2 class="single-cta-title">This post is exclusive to {{tiers}}</h2>
     {{/has}}
     {{#if @member}}
         <button class="button single-cta-button" data-portal="account/plans">Upgrade now</button>
     {{else}}
         <button class="button single-cta-button" data-portal="signup">Subscribe now</button>
         <br>
-        <button class="button-text single-cta-footer" data-portal="signin">Already have an account? Sign in</button>
+        <button class="button-text single-cta-footer" data-portal="signin">Already a member? Sign in</button>
     {{/if}}
 </section>

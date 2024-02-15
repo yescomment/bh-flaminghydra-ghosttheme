@@ -57,6 +57,20 @@
     text-align: center;
     border-top: 5px solid var(--brand-color);
     border-bottom: 1px solid var(--light-gray-color);
+    position: relative;
+}
+
+/* fade-out gradient */
+.single-cta::before {
+    content: "";
+    color: blue;
+    position: absolute;
+    left:0;
+    top:-10em;
+    height: 10em;
+    width: 100%;
+    background: linear-gradient(transparent,var(--color-white) 75%);
+    border-bottom: 5px var(--brand-color) solid;
 }
 
 .single-cta-title {
