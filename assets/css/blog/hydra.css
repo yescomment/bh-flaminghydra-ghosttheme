@@ -42,6 +42,10 @@
     margin-top: calc(1.5rem * var(--content-spacing-multiplier, 1)) !important;
 }
 
+.gh-content :is(h1, h2, h3, h4, h5, h6) a {
+    color: inherit;
+}
+
 h1[id],
 h2[id],
 h3[id],
