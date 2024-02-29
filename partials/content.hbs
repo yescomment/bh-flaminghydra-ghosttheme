@@ -13,6 +13,21 @@
             {{/is}}
 
             <h1 class="single-title">{{title}}</h1>
+            {{!-- Contribution box only for pieces --}}
+            {{^has tag="issue"}}
+                <div class="single-footer-top">
+                    <h3 class="single-footer-title fancy">
+                        <small>by</small>
+                        {{#foreach authors}}
+                            {{#if @last}}
+                            <a class="author-name" href="{{url}}">{{name}}</a>
+                            {{else}}
+                            <a class="author-name" href="{{url}}">{{name}}</a> <small>and</small>
+                            {{/if}}
+                        {{/foreach}}
+                    </h3>
+                </div>
+            {{/has}}
 
             {{#if custom_excerpt}}
                 <div class="single-excerpt">
