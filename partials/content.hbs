@@ -13,10 +13,10 @@
             {{/is}}
 
             <h1 class="single-title">{{title}}</h1>
-            {{!-- Contribution box only for pieces --}}
+            {{!-- Authors only for pieces --}}
             {{^has tag="issue"}}
-                <div class="single-footer-top">
-                    <h3 class="single-footer-title fancy">
+                <div class="single-header">
+                    <h2 class="fancy">
                         <small>by</small>
                         {{#foreach authors}}
                             {{#if @last}}
@@ -25,7 +25,7 @@
                             <a class="author-name" href="{{url}}">{{name}}</a> <small>and</small>
                             {{/if}}
                         {{/foreach}}
-                    </h3>
+                    </h2>
                 </div>
             {{/has}}
 

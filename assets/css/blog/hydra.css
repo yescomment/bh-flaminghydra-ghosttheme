@@ -36,7 +36,8 @@
     z-index: unset !important;
 }
 
-.single-title {
+.single-title,
+.single-header {
     color: var(--fh-yellow);
 }
 
