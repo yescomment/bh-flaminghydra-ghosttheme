@@ -160,6 +160,7 @@ a.block {
 
     text-align: center;
     font-weight: 400;
+    height: min-content;
 }
 
 .fh-box h2 {
