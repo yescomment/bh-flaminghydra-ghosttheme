@@ -16,7 +16,11 @@
             {{!-- Authors only for pieces --}}
             {{^has tag="issue"}}
                 <h2 class="single-header fancy">
-                    <small>by</small>
+                    {{#has tag="fiction"}}
+                        <small>fiction by</small>
+                    {{else}}
+                        <small>by</small>
+                    {{/has}}
                     {{#foreach authors}}
                         {{#if @last}}
                         <a class="author-name" href="{{url}}">{{name}}</a>
