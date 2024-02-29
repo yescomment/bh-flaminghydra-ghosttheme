@@ -15,18 +15,16 @@
             <h1 class="single-title">{{title}}</h1>
             {{!-- Authors only for pieces --}}
             {{^has tag="issue"}}
-                <div class="single-header">
-                    <h2 class="fancy">
-                        <small>by</small>
-                        {{#foreach authors}}
-                            {{#if @last}}
-                            <a class="author-name" href="{{url}}">{{name}}</a>
-                            {{else}}
-                            <a class="author-name" href="{{url}}">{{name}}</a> <small>and</small>
-                            {{/if}}
-                        {{/foreach}}
-                    </h2>
-                </div>
+                <h2 class="single-header fancy">
+                    <small>by</small>
+                    {{#foreach authors}}
+                        {{#if @last}}
+                        <a class="author-name" href="{{url}}">{{name}}</a>
+                        {{else}}
+                        <a class="author-name" href="{{url}}">{{name}}</a> <small>and</small>
+                        {{/if}}
+                    {{/foreach}}
+                </h2>
             {{/has}}
 
             {{#if custom_excerpt}}
