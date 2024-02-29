@@ -3,6 +3,10 @@
     display: none !important;
 }
 
+#gh-head {
+    height: 100px; /* idk but fixes colliding text */
+}
+
 .gh-head-brand-wrapper {
     padding: 1rem;
 }
