@@ -189,6 +189,10 @@ a.block {
     text-align: left;
 }
 
+.fh-box .author-index .author-index-item:not(:first-line) {
+    padding-inline-start: 0.5em;
+}
+
 .featured-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
