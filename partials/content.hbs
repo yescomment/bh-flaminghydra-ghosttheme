@@ -14,6 +14,7 @@
 
             <h1 class="single-title">{{title}}</h1>
             {{!-- Authors only for pieces --}}
+            {{#unless "page"}} {{!-- is there a better way to || ? --}}
             {{^has tag="issue"}}
                 <h2 class="single-header fancy">
                     {{#has tag="fiction"}}
@@ -30,6 +31,8 @@
                     {{/foreach}}
                 </h2>
             {{/has}}
+            {{/unless}}
+            
 
             {{#if custom_excerpt}}
                 <div class="single-excerpt">
