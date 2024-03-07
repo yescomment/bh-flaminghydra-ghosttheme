@@ -127,9 +127,9 @@ a.author-name {
 }
 
 a.author-name:hover,
-a.tag-name:hover,
+a.section-name:hover,
 .author-index .is-current a,
-.tag-index .is-current a {
+.section-index .is-current a {
     background-color: var(--brand-color);
     color: white;
 }
@@ -170,7 +170,7 @@ a.block {
     height: min-content;
 }
 
-.fh-box#tags {
+.fh-box#sections {
     background-color: var(--fh-green);
 }
 
@@ -183,7 +183,7 @@ a.block {
 }
 
 .fh-box .author-index,
-.fh-box .tag-index {
+.fh-box .section-index {
     display: block;
     margin: 0;
     padding: 1.5rem 0;
@@ -191,19 +191,19 @@ a.block {
 }
 
 .fh-box.scroll .author-index,
-.fh-box.scroll .tag-index {
+.fh-box.scroll .section-index {
     overflow-y: auto;
 }
 
 .fh-box .author-index .author-index-item,
-.fh-box .tag-index .tag-index-item {
+.fh-box .section-index .section-index-item {
     display: block;
     margin: 0 0.4rem;
     text-align: left;
 }
 
 .fh-box .author-index .author-index-item:not(:first-line),
-.fh-box .tag-index .tag-index-item:not(:first-line) {
+.fh-box .section-index .section-index-item:not(:first-line) {
     padding-inline-start: 0.5em;
 }
 
