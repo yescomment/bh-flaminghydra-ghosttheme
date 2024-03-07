@@ -113,15 +113,17 @@ hr {
 .author-name {
     color: var(--fh-yellow); /* note: inverted in fh-box */
     font-family: var(--font-serif);
+    font-weight: 600;
 }
 
 .section-name {
     font-family: var(--font-serif);
     font-variant-caps: all-caps;
+    font-weight: 900;
 }
 
-a.author-name {
-    font-weight: 600;
+a.author-name,
+a.section-name {
     padding: 0.3em;
     border-radius: 0.5em;
     opacity: 1;
@@ -207,8 +209,12 @@ a.block {
     text-align: left;
 }
 
-.fh-box .author-index .author-index-item:not(:first-line),
-.fh-box .section-index .section-index-item:not(:first-line) {
+.fh-box .section-index .section-index-item {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.fh-box .author-index .author-index-item:not(:first-line) {
     padding-inline-start: 0.5em;
 }
 
