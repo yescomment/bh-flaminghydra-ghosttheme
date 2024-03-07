@@ -127,14 +127,10 @@ a.author-name {
 }
 
 a.author-name:hover,
-.author-index .is-current a {
-    background-color: var(--brand-color);
-    color: white;
-}
-
 a.tag-name:hover,
+.author-index .is-current a,
 .tag-index .is-current a {
-    background-color: var(--fh-green);
+    background-color: var(--brand-color);
     color: white;
 }
 
@@ -172,6 +168,10 @@ a.block {
     text-align: center;
     font-weight: 400;
     height: min-content;
+}
+
+.fh-box#tags {
+    background-color: var(--fh-green);
 }
 
 .fh-box + .fh-box {
