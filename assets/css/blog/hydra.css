@@ -116,7 +116,6 @@ hr {
 }
 
 .section-name {
-    color: var(--fh-green);
     font-family: var(--font-serif);
     font-variant-caps: all-caps;
 }
