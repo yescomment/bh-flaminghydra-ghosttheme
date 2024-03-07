@@ -143,7 +143,8 @@ a.section-name:hover,
 
 .author-index .special,
 .section-index .special {
-    color: var(--fh-yellow) !important;
+    color: var(--brand-color) !important;
+    font-weight: 900;
 }
 
 .author-index .special:hover,
