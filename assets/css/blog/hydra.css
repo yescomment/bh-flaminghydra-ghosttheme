@@ -115,6 +115,12 @@ hr {
     font-family: var(--font-serif);
 }
 
+.section-name {
+    color: var(--fh-green);
+    font-family: var(--font-serif);
+    font-variant-caps: all-caps;
+}
+
 a.author-name {
     font-weight: 600;
     padding: 0.3em;
