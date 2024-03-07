@@ -113,13 +113,13 @@ hr {
 .author-name {
     color: var(--fh-yellow); /* note: inverted in fh-box */
     font-family: var(--font-serif);
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .section-name {
     font-family: var(--font-serif);
     font-variant-caps: all-caps;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 a.author-name,
@@ -210,7 +210,7 @@ a.block {
 }
 
 .fh-box .section-index .section-index-item {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
