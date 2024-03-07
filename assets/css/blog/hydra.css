@@ -146,6 +146,11 @@ a.section-name:hover,
     color: var(--brand-color) !important;
 }
 
+.author-index .special:hover,
+.section-index .special:hover {
+    color: white !important;
+}
+
 h1.toplevel {
     color: var(--brand-color);
     margin-top: 2rem;
