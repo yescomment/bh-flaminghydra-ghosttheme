@@ -174,28 +174,36 @@ a.block {
     height: min-content;
 }
 
+.fh-box + .fh-box {
+    margin-top: 1rem;
+}
+
 .fh-box h2 {
     font-family: var(--font-serif);
 }
 
-.fh-box .author-index {
+.fh-box .author-index,
+.fh-box .tag-index {
     display: block;
     margin: 0;
     padding: 1.5rem 0;
     list-style: none;
 }
 
-.fh-box.scroll .author-index {
+.fh-box.scroll .author-index,
+.fh-box.scroll .tag-index {
     overflow-y: auto;
 }
 
-.fh-box .author-index .author-index-item {
+.fh-box .author-index .author-index-item,
+.fh-box .tag-index .tag-index-item {
     display: block;
     margin: 0 0.4rem;
     text-align: left;
 }
 
-.fh-box .author-index .author-index-item:not(:first-line) {
+.fh-box .author-index .author-index-item:not(:first-line),
+.fh-box .tag-index .tag-index-item:not(:first-line) {
     padding-inline-start: 0.5em;
 }
 
