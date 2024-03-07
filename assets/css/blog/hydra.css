@@ -141,6 +141,11 @@ a.section-name:hover,
     color: white;
 }
 
+.author-index .special,
+.section-index .special {
+    color: var(--brand-color) !important;
+}
+
 h1.toplevel {
     color: var(--brand-color);
     margin-top: 2rem;
@@ -211,7 +216,6 @@ a.block {
 
 .fh-box .section-index .section-index-item {
     font-size: 2rem;
-    text-align: center;
 }
 
 .fh-box .author-index .author-index-item:not(:first-line) {
