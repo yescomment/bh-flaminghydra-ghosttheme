@@ -132,6 +132,12 @@ a.author-name:hover,
     color: white;
 }
 
+a.tag-name:hover,
+.tag-index .is-current a {
+    background-color: var(--fh-green);
+    color: white;
+}
+
 h1.toplevel {
     color: var(--brand-color);
     margin-top: 2rem;
