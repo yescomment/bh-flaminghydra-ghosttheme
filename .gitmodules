@@ -1,0 +1,3 @@
+[submodule "labs-config"]
+	path = labs-config
+	url = git@github.com:yescomment/bh-flaminghydra-ghostconfig.git
