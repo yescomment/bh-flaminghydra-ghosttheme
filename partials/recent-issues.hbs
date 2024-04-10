@@ -1,0 +1,12 @@
+{{#get "posts" filter="tag:issues" limit="10"}}
+  {{#if posts}}
+    <ul class="fh-issue-index">
+      {{#foreach posts}}
+          {{> "loop"}}
+      {{/foreach}}
+    </ul>
+    <nav class="load-more">
+      <a href="/issues" class="button">Enter the archives</a>
+    </nav>
+  {{/if}}
+{{/get}}
