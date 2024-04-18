@@ -249,3 +249,9 @@ a.block {
     object-fit: cover;
     margin-bottom: 1rem;
 }
+
+iframe#outpost-embed {
+    background-color: var(--fh-yellow);
+    border-radius: 1rem;
+    box-shadow: 0 0 5px var(--fh-yellow);
+}
