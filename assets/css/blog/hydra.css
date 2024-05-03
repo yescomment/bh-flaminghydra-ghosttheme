@@ -216,8 +216,13 @@ a.block {
 .fh-box .author-index .author-index-item,
 .fh-box .section-index .section-index-item {
     display: block;
-    margin: 0 0.4rem;
+    margin-inline: 1em; /* see next rule; first line outdented */
     text-align: left;
+}
+
+.fh-box .author-index .author-index-item::first-line,
+.fh-box .section-index .section-index-item::first-line {
+    margin-inline-start: 0.5em;
 }
 
 .fh-box .section-index .section-index-item {
